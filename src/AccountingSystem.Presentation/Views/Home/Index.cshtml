@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Accounting System</h1>
+    <p>Comprehensive accounting software built with ASP.NET Core</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Chart of Accounts</h5>
+                <p class="card-text">Manage your account structure with hierarchical accounts</p>
+                <a href="@Url.Action("Index", "ChartOfAccounts")" class="btn btn-primary">View Accounts</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Journal Entries</h5>
+                <p class="card-text">Record and manage double-entry journal entries</p>
+                <a href="@Url.Action("Index", "JournalEntries")" class="btn btn-primary">View Entries</a>
+            </div>
+        </div>
+    </div>
+</div>
